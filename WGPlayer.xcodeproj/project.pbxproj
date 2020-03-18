@@ -15,6 +15,7 @@
 		AF954C4E2421C090002AB7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF954C4C2421C090002AB7FF /* LaunchScreen.storyboard */; };
 		AF954C592421C090002AB7FF /* WGPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF954C582421C090002AB7FF /* WGPlayerTests.swift */; };
 		AF954C642421C090002AB7FF /* WGPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF954C632421C090002AB7FF /* WGPlayerUITests.swift */; };
+		C79F246249AC38BE4E2475D5 /* Pods_WGPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727450BA8A701E04E23CFE43 /* Pods_WGPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A54E81D2917EEA4A629A011 /* Pods-WGPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGPlayer.debug.xcconfig"; path = "Target Support Files/Pods-WGPlayer/Pods-WGPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		727450BA8A701E04E23CFE43 /* Pods_WGPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF954C3E2421C08A002AB7FF /* WGPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF954C412421C08A002AB7FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF954C432421C08A002AB7FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		AF954C5F2421C090002AB7FF /* WGPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF954C632421C090002AB7FF /* WGPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGPlayerUITests.swift; sourceTree = "<group>"; };
 		AF954C652421C090002AB7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90656973AD78824E3B066F2 /* Pods-WGPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGPlayer.release.xcconfig"; path = "Target Support Files/Pods-WGPlayer/Pods-WGPlayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79F246249AC38BE4E2475D5 /* Pods_WGPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BAC99E95C0DD0B266FAC7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A54E81D2917EEA4A629A011 /* Pods-WGPlayer.debug.xcconfig */,
+				E90656973AD78824E3B066F2 /* Pods-WGPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1238DC1357B9973AE29CAD5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				727450BA8A701E04E23CFE43 /* Pods_WGPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF954C352421C08A002AB7FF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				AF954C572421C090002AB7FF /* WGPlayerTests */,
 				AF954C622421C090002AB7FF /* WGPlayerUITests */,
 				AF954C3F2421C08A002AB7FF /* Products */,
+				06BAC99E95C0DD0B266FAC7D /* Pods */,
+				1238DC1357B9973AE29CAD5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF954C682421C090002AB7FF /* Build configuration list for PBXNativeTarget "WGPlayer" */;
 			buildPhases = (
+				3D3DCCC5995963BE069EE4BB /* [CP] Check Pods Manifest.lock */,
 				AF954C3A2421C08A002AB7FF /* Sources */,
 				AF954C3B2421C08A002AB7FF /* Frameworks */,
 				AF954C3C2421C08A002AB7FF /* Resources */,
+				12648264B8C2F60DAAF8C92B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12648264B8C2F60DAAF8C92B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WGPlayer/Pods-WGPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WGPlayer/Pods-WGPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WGPlayer/Pods-WGPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D3DCCC5995963BE069EE4BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WGPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF954C3A2421C08A002AB7FF /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		AF954C692421C090002AB7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A54E81D2917EEA4A629A011 /* Pods-WGPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +519,7 @@
 		};
 		AF954C6A2421C090002AB7FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90656973AD78824E3B066F2 /* Pods-WGPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
